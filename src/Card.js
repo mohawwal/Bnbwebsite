@@ -1,5 +1,4 @@
 import React from "react";
-import data from "./data";
 
 
 export default function Card(props) {
@@ -7,10 +6,10 @@ export default function Card(props) {
         <div className="Card">
             <div className="Card--box">
                 {props.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
-                <img src={props.coverImg} className="card--image" />
+                <img src={props.coverImg} alt="Profile cards" className="card--image" />
             </div>
             <div className="card--stats">
-                <img src="images/star1.png" className="card--star"/>
+                <img src="images/star1.png" alt="start-icon" className="card--star"/>
                 <span>{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) ~ </span>
                 <span className="gray">{props.location}</span>
